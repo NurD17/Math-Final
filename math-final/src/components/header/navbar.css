@@ -1,0 +1,48 @@
+.header-background {
+    background-color: white;
+}
+.header-part {
+    margin: 0 auto;
+    width: 1920px;
+    height: 880px;
+    border-radius: 0 0 20px 20px;
+    background-color: #452A80;
+}
+.logo {
+    text-align: center;
+    font-size: 31px;
+    color:white;
+    padding: 60px 0 118px 0;
+}
+.header-content {
+    display: flex;
+}
+.head-info {
+    margin-top: 40px;
+    width: 50%;
+    color:white;
+}
+.head-info h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
+.head-info h2 {
+    font-size: 32px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.head-info p {
+    font-size: 23px;
+    width: 520px;
+}
+.head-info button {
+    height: 55px;
+    width: 245px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #D78100;
+    font-size: 26px;
+    color:white;
+    margin: 50px 0;
+}

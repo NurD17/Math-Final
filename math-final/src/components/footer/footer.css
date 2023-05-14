@@ -1,0 +1,10 @@
+.footer-part {
+    margin: 0 auto;
+    width: 1920px;
+    height: 430px;
+    background-color: #25124E;
+}
+.footer-logo h2 {
+    color: white;
+    font-size: 30px;
+}
