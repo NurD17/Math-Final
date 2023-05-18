@@ -1,7 +1,6 @@
 import './navbar.css'
 import img1 from '../../img/head-img.png'
-import '../../bootstrap.min.css'
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
     const navigate = useNavigate()
   return (
