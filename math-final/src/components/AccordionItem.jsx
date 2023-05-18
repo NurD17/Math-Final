@@ -1,6 +1,5 @@
 import React from 'react'
 import './main/LearnPageContent.scss'
-import { ProjectContext } from '../Context/ProjectContext'
 import { Link } from 'react-router-dom'
 
 function AccordionItem(props) {
