@@ -4,4 +4,17 @@ $primaryColor: #452A80;
     width: 100%;
     height: 100px;
     background-color: $primaryColor;
+    .form-select {
+        max-width: 20%;
+        min-width: 140px;
+        &:focus {
+            border-color: transparent;
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+    .navbar--heading {
+        color: #fff;
+    }
 }
+

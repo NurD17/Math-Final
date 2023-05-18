@@ -1,0 +1,40 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+$primaryColor: #452A80;
+
+.learnPageHeading {
+    font-weight: 700;
+    margin-top: 1.5em;
+}
+
+.accordion {
+    margin-top: 1.5em;
+    .accordion-button {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: transparent;
+        &:focus {
+            border-color: #eee2ff;
+            box-shadow: 0 0 0 0.25rem #eee2ff;
+        }
+    }
+    .accordion--heading {
+        font-weight: 700;
+        color: #212529;
+    }
+    .accordion--subheading {
+        color: #212529a5;
+    }
+    .accordion-body {
+        transition: all .2s ease-in-out;
+        &:hover {
+            background-color: #eee2ff;
+        }
+        a {
+            text-decoration: none;
+            color: #212529;
+        }
+    }
+}
