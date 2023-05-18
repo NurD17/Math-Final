@@ -10,22 +10,32 @@ export const ProjectContextProvider = ({ children }) => {
         name: ""
     })
     const [currentBookObject, setCurrentBookObject] = useState({})
+
     useEffect(() => {
         fetch("https://math-a1n7.onrender.com/grades")
             .then(res => res.json())
             .then(data => setBookObjectsArray(data));
+    }, []);
+
+    useEffect(() => {
         fetch(`https://math-a1n7.onrender.com/grades/${currentBookIdAndName.id}`)
             .then(res => res.json())
             .then(data => setCurrentBookObject(data));
-    }, [currentBookIdAndName.id]);
+    }, [currentBookIdAndName.id])
 
     const bookNamesArray = bookObjectsArray.map(item => {
         return <option key={item._id} onClick={() => setCurrentBookIdAndName({ id: item._id, name: item.name })}>{item.name}</option>
     })
 
-    console.log(currentBookObject.topics)
+    let currentBookTopics = [];
+    if (typeof currentBookObject.topics != 'undefined') {
+        currentBookTopics = currentBookObject.topics.map(item => {
+            return item
+        })
+    }
+
     return (
-        <ProjectContext.Provider value={{ bookNamesArray, currentBookIdAndName }}>
+        <ProjectContext.Provider value={{ bookNamesArray, currentBookIdAndName, currentBookTopics }}>
             {children}
         </ProjectContext.Provider>
     )

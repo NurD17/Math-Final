@@ -10,9 +10,9 @@ function LearnPageContent() {
         <div className="container">
             <h1 className='learnPageHeading'>{currentBookIdAndName.name}</h1>
             <div className="accordion" id="accordionExample">
-                {/* <AccordionItem h2Id={"headingOne"} divId={"collapseOne"} databstarget={"#collapseOne"}/>
+                <AccordionItem h2Id={"headingOne"} divId={"collapseOne"} databstarget={"#collapseOne"}/>
                 <AccordionItem h2Id={"headingTwo"} divId={"collapseTwo"} databstarget={"#collapseTwo"}/>
-                <AccordionItem h2Id={"headingThree"} divId={"collapseThree"} databstarget={"#collapseThree"}/> */}
+                <AccordionItem h2Id={"headingThree"} divId={"collapseThree"} databstarget={"#collapseThree"}/>
             </div>
         </div>
     )
