@@ -5,7 +5,6 @@ import AccordionItem from '../AccordionItem'
 
 function LearnPageContent() {
     const {currentBookIdAndName} = useContext(ProjectContext)
-
     return (
         <div className="container">
             <h1 className='learnPageHeading'>{currentBookIdAndName.name}</h1>
