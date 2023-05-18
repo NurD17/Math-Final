@@ -1,0 +1,19 @@
+$primaryColor: #452A80;
+
+.unitContentPage--header {
+    width: 100%;
+    height: 100px;
+    background-color: $primaryColor;
+    display: flex;
+    align-items: center;
+    .unitContentPage--container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+}
+
+.unitContentPage--container {
+    text-align: center;
+}

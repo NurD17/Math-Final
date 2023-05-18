@@ -4,15 +4,15 @@ import { ProjectContext } from '../../Context/ProjectContext'
 import AccordionItem from '../AccordionItem'
 
 function LearnPageContent() {
-    const {currentBookIdAndName} = useContext(ProjectContext)
-
+    const {currentBookIdAndName, currentBookTopics} = useContext(ProjectContext)
+    const currentBookTopicsArray = currentBookTopics.map(object => {
+        return <AccordionItem topic={object.name} unit={object.units} h2Id={`heading${object._id}`} divId={`collapse${object._id}`} databstarget={`#collapse${object._id}`} key={object._id}/>
+    })
     return (
         <div className="container">
             <h1 className='learnPageHeading'>{currentBookIdAndName.name}</h1>
             <div className="accordion" id="accordionExample">
-                <AccordionItem h2Id={"headingOne"} divId={"collapseOne"} databstarget={"#collapseOne"}/>
-                <AccordionItem h2Id={"headingTwo"} divId={"collapseTwo"} databstarget={"#collapseTwo"}/>
-                <AccordionItem h2Id={"headingThree"} divId={"collapseThree"} databstarget={"#collapseThree"}/>
+                {currentBookTopicsArray}
             </div>
         </div>
     )
